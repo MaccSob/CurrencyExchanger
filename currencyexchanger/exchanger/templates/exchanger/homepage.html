@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<body>
+    <h1>Exchange Result</h1>
+    <div class="result">
+        <p>
+            {{ amount }} {{ from_currency }} is equal to
+        </p>
+        <p class="amount">
+            {{ converted_amount }} {{ to_currency }}
+        </p>
+    </div>
+    <a href="{% url 'exchange' %}" class="back-link">Choose different currency</a>
+</body>
+</html>

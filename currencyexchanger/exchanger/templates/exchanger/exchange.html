@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'global.css' %}">
+<body>
+    <h1>Currency exchanger</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        
+        <label for="from_currency">From Currency:</label>
+        <select id="from_currency" name="from_currency" required>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="PLN">Polish zloty</option>
+        </select>
+        
+        <label for="to_currency">To Currency:</label>
+        <select id="to_currency" name="to_currency" required>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="PLN">Polish zloty</option>
+        </select>
+        
+        <button type="submit">Exchange</button>
+    </form>
+</body>
+</html>
