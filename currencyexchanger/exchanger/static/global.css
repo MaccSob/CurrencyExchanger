@@ -28,10 +28,11 @@
         }
         button {
             display: block;
+            font-weight: 600;
             width: 100%;
             padding: 10px;
-            background: #45a611;
-            color: #2a1010;
+            background: #43b72b;
+            color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;

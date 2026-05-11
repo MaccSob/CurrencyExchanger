@@ -1,5 +1,8 @@
 import requests
 from django.shortcuts import render
+from django.views.decorators.cache import cache_page
+
+@cache_page(60 * 15)
 
 def change_currency(request):
     if request.method == 'POST':
@@ -22,3 +25,4 @@ def change_currency(request):
         })
     
     return render(request, 'exchanger/exchange.html')
+
