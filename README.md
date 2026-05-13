@@ -6,7 +6,7 @@
 CurrencyExchanger is a functional application designed to simplify currency conversion for everyday users. The project showcases solid foundations in frontend layout design, user input handling, and interacting with currency data. It was built to practice clean code structure, state management, and creating responsive user interfaces.
 
 ## 🛠️ Tech Stack
-*   **Core:** HTML5, CSS3, JavaScript (ES6+)
+*   **Core:** HTML5, CSS3, Django(Python)
 *   **Styling:** Modern CSS (Flexbox / CSS Grid, Responsive Web Design)
 *   **Data Source:** Integration with external exchange rates API
 
